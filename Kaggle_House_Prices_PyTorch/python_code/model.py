@@ -47,14 +47,14 @@ class Mlp(nn.Module):
 class TF(nn.Module):
     def __init__(self, in_features, drop=0.):
         super().__init__()
-        self.Block1 = Mlp(in_features=in_features, hidden_features=331, act_layer=nn.GELU, drop=drop, pred=False)
+        self.Block1 = Mlp(in_features=in_features, hidden_features=64, act_layer=nn.GELU, drop=drop, pred=False)
         # self.Block1_1 = Mlp(in_features=in_features, hidden_features=64, act_layer=nn.GELU, drop=drop, pred=False)
         # self.Block1_2 = Mlp(in_features=in_features, hidden_features=64, act_layer=nn.GELU, drop=drop, pred=False)
         # self.Block1_3 = Mlp(in_features=in_features, hidden_features=64, act_layer=nn.GELU, drop=drop, pred=False)
         # self.Block1_1 = Mlp(in_features=in_features, hidden_features=64, act_layer=nn.GELU, drop=drop, pred=False)
         # self.Block1_1 = Mlp(in_features=in_features, hidden_features=64, act_layer=nn.GELU, drop=drop, pred=False)
         # self.Block1_1 = Mlp(in_features=in_features, hidden_features=64, act_layer=nn.GELU, drop=drop, pred=False)
-        self.Block2 = Mlp(in_features=in_features, hidden_features=331, act_layer=nn.GELU, drop=drop, pred=True)
+        self.Block2 = Mlp(in_features=in_features, hidden_features=64, act_layer=nn.GELU, drop=drop, pred=True)
 
     def forward(self, x):
         return self.Block2(self.Block1(x))
