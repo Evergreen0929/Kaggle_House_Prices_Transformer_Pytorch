@@ -11,14 +11,13 @@ import pandas as pd
 import torch
 from torch import nn
 from torch.utils import data
-
+import seaborn as sns
 from model import Mlp, TF
 
 
 # ### Import Data
 train_raw = pd.read_csv('train.csv')
 test_raw = pd.read_csv('test.csv')
-
 
 # ##### description
 print(train_raw.shape, test_raw.shape)
@@ -37,10 +36,18 @@ all_features[numeric_features] = all_features[numeric_features].apply(
 all_features[numeric_features] = all_features[numeric_features].fillna(0)
 
 
+#heatmap
+corrmat = all_features.corr()
+plt.subplots(figsize=(15,15))
+sns.heatmap(corrmat, vmax=0.9, square=True)
+plt.savefig('./corr.png')
+plt.show()
+
 # ##### Get Dummies
+
 all_features = pd.get_dummies(all_features, dummy_na=True)
 print(all_features.shape)
-#print(all_features)
+print(all_features)
 
 
 # ###### Convert to tensors
@@ -149,7 +156,7 @@ def train_and_pred(train_features, test_features, train_labels, test_data,
     submission.to_csv('submission.csv', index=False)
 
 
-k, num_epochs, lr, weight_decay, batch_size = 5, 100, 0.0006, 2, 64
+k, num_epochs, lr, weight_decay, batch_size = 5, 100, 0.002, 2, 64
 
 print("K-fold Validation:\n")
 
@@ -158,15 +165,15 @@ train_l, valid_l = k_fold(k, train_features, train_labels, num_epochs, lr,
 print(f'{k}-fold validation: avg train log rmse: {float(train_l):f}, '
       f'avg valid log rmse: {float(valid_l):f}')
 
-# train_and_pred(train_features, test_features, train_labels, test_raw,
-#                num_epochs, lr, weight_decay, batch_size)
+train_and_pred(train_features, test_features, train_labels, test_raw,
+               num_epochs, lr, weight_decay, batch_size)
 
 print("\n\nTrain on different lr range from 0.01 to 0.0001 with stepping 0.0001:\n")
 
-lr_range = np.arange(0.0001, 0.01, 0.0001).tolist()
-for lr in lr_range:
-    print('\nlr:{:.5f}'.format(lr))
-    train_and_pred(train_features, test_features, train_labels, test_raw,
-               num_epochs, lr, weight_decay, batch_size)
+# lr_range = np.arange(0.0001, 0.01, 0.0001).tolist()
+# for lr in lr_range:
+#     print('\nlr:{:.5f}'.format(lr))
+#     train_and_pred(train_features, test_features, train_labels, test_raw,
+#                num_epochs, lr, weight_decay, batch_size)
 
 
