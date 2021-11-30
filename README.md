@@ -6,9 +6,9 @@ A light-weight Transformer model for Kaggle House Prices Regression Competition
 A simple Pytorch deep learning model for predicting the house price. Lightweight Transformer model is tested for accuracy.
 The Transformer architecture is utilized to capture pair-wise affinity of all the features.
 
-<img src="https://user-images.githubusercontent.com/90333984/144088221-27ea75be-cd17-42cb-b37c-ad0e4c2d8e3b.png" width="500">
+<img src="https://user-images.githubusercontent.com/90333984/144088221-27ea75be-cd17-42cb-b37c-ad0e4c2d8e3b.png" width="650">
 
-Network Sturcture:
+Network Sturcture:\\
 <img src="https://user-images.githubusercontent.com/90333984/144082762-367e81f0-9e76-4a08-9e97-cf1942b2666a.png" width="400">
 
 
