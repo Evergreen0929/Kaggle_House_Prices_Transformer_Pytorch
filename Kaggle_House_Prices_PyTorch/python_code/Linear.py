@@ -170,10 +170,10 @@ train_and_pred(train_features, test_features, train_labels, test_raw,
 
 print("\n\nTrain on different lr range from 0.01 to 0.0001 with stepping 0.0001:\n")
 
-# lr_range = np.arange(0.0001, 0.01, 0.0001).tolist()
-# for lr in lr_range:
-#     print('\nlr:{:.5f}'.format(lr))
-#     train_and_pred(train_features, test_features, train_labels, test_raw,
-#                num_epochs, lr, weight_decay, batch_size)
+lr_range = np.arange(0.0001, 0.01, 0.0001).tolist()
+for lr in lr_range:
+    print('\nlr:{:.5f}'.format(lr))
+    train_and_pred(train_features, test_features, train_labels, test_raw,
+               num_epochs, lr, weight_decay, batch_size)
 
 
