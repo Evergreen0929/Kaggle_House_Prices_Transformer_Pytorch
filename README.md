@@ -1,9 +1,11 @@
 # Kaggle_House_Prices_Transformer_Pytorch
-A light-weight transformer model for Kaggle House Prices Regression Competition
+A light-weight Transformer model for Kaggle House Prices Regression Competition
 
 # Kaggle House Prices -Advance Regression Techniques
 
 A simple Pytorch deep learning model for predicting the house price. Lightweight Transformer model is tested for accuracy.
+![网络结构](https://user-images.githubusercontent.com/90333984/144082762-367e81f0-9e76-4a08-9e97-cf1942b2666a.png)
+
 
 <!-- # Table of Contents
 1. [Project Objective](#objective)
@@ -22,6 +24,14 @@ Get packages by using conda or pip.
 
 ## Kaggle
 Once finished, you can upload your prediction.csv to the kaggle website where you can compare your score with other users.
+
+Model	5-Fold Validation	Test loss (rmse)
+(on official test dataset)
+	Train loss (rmse)	Test loss (rmse)	
+MLP (1 Block)	0.127530	0.140763	0.15460
+MLP (2 Blocks)	0.108675	0.163794	0.15125
+Ours	0.017307	0.129986	0.12760
+
 
 ## Acknowledgement
 You need to have more than 4GB GPU memory to train the model with default settings, or you need to change batchsize or the network sturctures.
