@@ -26,11 +26,122 @@ Get packages by using conda or pip.
 ## Kaggle
 Once finished, you can upload your prediction.csv to the kaggle website where you can compare your score with other users.
 
-Model			5-Fold Validation			Test loss (rmse)(on official test dataset)
-		Train loss (rmse)	Test loss (rmse)	
-MLP (1 Block)	0.127530		0.140763		0.15460
-MLP (2 Block)	0.108675		0.163794		0.15125
-Ours		0.017307		0.129986		0.12760
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:21.6pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=131 rowspan=2 style='width:98.3pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>Model</span></p>
+  </td>
+  <td width=262 colspan=2 style='width:196.6pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>5-Fold
+  Validation</span></p>
+  </td>
+  <td width=131 rowspan=2 style='width:98.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>Test loss
+  (rmse)</span></p>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-size:9.0pt;font-family:"Times New Roman",serif'>(on
+  official test dataset)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph style='text-indent:0cm'><span lang=EN-US
+  style='font-family:"Times New Roman",serif'>Train loss (rmse)</span></p>
+  </td>
+  <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph style='text-indent:0cm'><span lang=EN-US
+  style='font-family:"Times New Roman",serif'>Test loss (rmse)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=131 valign=top style='width:98.3pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>MLP (1
+  Block)</span></p>
+  </td>
+  <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>0.127530</span></p>
+  </td>
+  <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>0.140763</span></p>
+  </td>
+  <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>0.15460</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=131 valign=top style='width:98.3pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>MLP (2
+  Blocks)</span></p>
+  </td>
+  <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>0.108675</span></p>
+  </td>
+  <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>0.163794</span></p>
+  </td>
+  <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>0.15125</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=131 valign=top style='width:98.3pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>TF (2 Blocks)</span></p>
+  </td>
+  <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><b><span lang=EN-US style='font-family:"Times New Roman",serif'>0.017307</span></b></p>
+  </td>
+  <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><b><span lang=EN-US style='font-family:"Times New Roman",serif'>0.129986</span></b></p>
+  </td>
+  <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraph align=center style='text-align:center;text-indent:
+  0cm'><b><span lang=EN-US style='font-family:"Times New Roman",serif'>0.12760</span></b></p>
+  </td>
+ </tr>
+</table>
 
 
 ## Acknowledgement
