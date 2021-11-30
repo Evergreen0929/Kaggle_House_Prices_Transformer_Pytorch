@@ -13,11 +13,12 @@ A simple Pytorch deep learning model for predicting the house price. Lightweight
 This is my first project in PyTorch. The aim of the project is to perform a simple multivariate regression using Transformer model. 
 
 ## Python Packages
+Get packages by using conda or pip.
+
 1. PyTorch=1.8.0
 2. numpy=1.19.2
 3. matplotlib=3.3.4
 4. pandas=1.1.5
-Get packages by using conda or pip.
 
 ## Kaggle
 Once finished, you can upload your prediction.csv to the kaggle website where you can compare your score with other users.
