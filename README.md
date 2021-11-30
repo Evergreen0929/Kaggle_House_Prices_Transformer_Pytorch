@@ -22,6 +22,7 @@ Get packages by using conda or pip.
 2. numpy=1.19.2
 3. matplotlib=3.3.4
 4. pandas=1.1.5
+5. seaborn=0.11.2
 
 ## Kaggle
 Once finished, you can upload your prediction.csv to the kaggle website where you can compare your score with other users.
