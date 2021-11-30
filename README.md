@@ -120,7 +120,7 @@ Once finished, you can upload your prediction.csv to the kaggle website where yo
   <td width=131 valign=top style='width:98.3pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoListParagraph align=center style='text-align:center;text-indent:
-  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>TF (2 Blocks)</span></p>
+  0cm'><span lang=EN-US style='font-family:"Times New Roman",serif'>Ours</span></p>
   </td>
   <td width=131 valign=top style='width:98.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
