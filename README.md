@@ -25,12 +25,11 @@ Get packages by using conda or pip.
 ## Kaggle
 Once finished, you can upload your prediction.csv to the kaggle website where you can compare your score with other users.
 
-Model	5-Fold Validation	Test loss (rmse)
-(on official test dataset)
-	Train loss (rmse)	Test loss (rmse)	
-MLP (1 Block)	0.127530	0.140763	0.15460
-MLP (2 Blocks)	0.108675	0.163794	0.15125
-Ours	0.017307	0.129986	0.12760
+Model			5-Fold Validation			Test loss (rmse)(on official test dataset)
+		Train loss (rmse)	Test loss (rmse)	
+MLP (1 Block)	0.127530		0.140763		0.15460
+MLP (2 Block)	0.108675		0.163794		0.15125
+Ours		0.017307		0.129986		0.12760
 
 
 ## Acknowledgement
