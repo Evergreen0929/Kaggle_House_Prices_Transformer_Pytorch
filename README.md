@@ -148,5 +148,5 @@ Once finished, you can upload your prediction.csv to the kaggle website where yo
 </table>
 
 
-## Acknowledgement
+## Supplementary
 You need to have more than 4GB GPU memory to train the model with default settings, or you need to change batchsize or the network sturctures.
